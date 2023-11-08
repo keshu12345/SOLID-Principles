@@ -1,6 +1,7 @@
 # SOLID-Principles In Golang
 
 ## S-Single Responsibilty Principle
+### Singleton
 A class should have one and only one reason to change, meaning that a class should have only one job.
 
 ## O-Open Close Principle
