@@ -11,9 +11,17 @@ var singletonObj *singleton
 var once sync.Once
 
 func getInstance() *singleton {
-	once.Do(func() {
-		singletonObj = &singleton{}
-	})
+
+	if singletonObj == nil {
+		once.Do(
+			func() {
+				fmt.Println("Creating single instance now.")
+				singletonObj = &singleton{}
+			})
+	} else {
+		fmt.Println("Single instance already created.")
+	}
+
 	return singletonObj
 }
 
