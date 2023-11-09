@@ -17,3 +17,4 @@ A client should never be forced to implement an interface that it doesn’t use,
 ## D-Dependency Inversion Principle
 Dependency inversion principle states:
 Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+Class should depend on interface rather than concreate class
